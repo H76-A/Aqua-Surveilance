@@ -170,9 +170,6 @@ export default function ActiveExample(props) {
                   <td>{user.addr}</td>
                   <td>
                     <Button
-                     
-                      
-                      size="small"
                       onClick={() => handleClick(user.id)}
                     >
                       Remove

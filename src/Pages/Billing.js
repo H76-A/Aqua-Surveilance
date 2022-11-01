@@ -14,6 +14,11 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function Billing() {
   const [users, setUsers] = useState([]);
   const [showInvoice, setShowInvoice] = useState(false);
+
+  const [title,setTitle]  = useState()
+  const [meternum ,setMeternum] = useState()
+  const [addr ,setAddr] = useState()
+  const [cell , setCell] = useState()
   // use Effect and State for User Data
   // Firebase
   useEffect(() => {
@@ -28,8 +33,14 @@ export default function Billing() {
   }, []);
 
   //Invoice Handling
-  const handleInvoice = () => {
+  const handleInvoice = ( title, addr,meternum ,cell) => {
     setShowInvoice(true);
+    
+    setTitle(title)
+    setMeternum(meternum)
+    setAddr(addr)
+    setCell(cell)
+    
   };
   const handleClose = () => setShowInvoice(false);
 
@@ -71,7 +82,8 @@ export default function Billing() {
               <td>{user.addr}</td>
               <td>
                 <Button
-                  onClick={() => handleInvoice()}
+                  onClick={() => handleInvoice( user.title , user.addr,user.meternum ,user.cell)}
+                  
                 >
                   View
                 </Button>{" "}
@@ -98,7 +110,7 @@ export default function Billing() {
                     <p> Benazir Bhutto shaheed University Lyari karachi</p>
                     <h5>To</h5>
                     <p>
-                      Muhammad Anees: kakka Peer Village Maripur Road Younisabad
+                        `{title} : {addr}`
                     </p>
                   </div>
                   <table>
@@ -108,7 +120,7 @@ export default function Billing() {
                       </tr>
                       <tr>
                         <td>Account Number</td>
-                        <td>930942039874</td>
+                        <td>{meternum}</td>
                       </tr>
                       <tr>
                         <td>Billing Date</td>
@@ -134,7 +146,7 @@ export default function Billing() {
                     </thead>
                     <tbody>
                       <tr>
-                        <td>390234093</td>
+                        <td>{meternum}</td>
                         <td>20/1/2022</td>
                         <td>500</td>
                         <td>0</td>
