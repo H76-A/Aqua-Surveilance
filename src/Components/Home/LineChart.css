@@ -1,0 +1,18 @@
+.LineChart{
+    width: 500px;
+    display:grid  !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: opx;
+    border-radius: 10px;
+}
+
+.LineChart span{
+    border: 0px solid ;
+    background-color: rgb(68, 108, 179) !important;
+    border-radius: 10px;
+  
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    font-weight:600;
+}

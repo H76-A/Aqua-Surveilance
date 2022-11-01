@@ -1,0 +1,53 @@
+.Users{
+    margin-left: 13em;
+}
+.Users .head{
+    padding-top:2em ;
+    padding-bottom: 1em;
+}
+
+.Users .userheading{
+    text-transform: uppercase;
+    font-size: 2.2em;
+  text-align: left;
+  font-style: oblique;
+
+}
+.Users .head button{
+    font-size: .8em;
+    font-weight: 700;
+    margin-top: .5em;
+   margin-left: 9em;
+   
+}
+.Users button{
+    font-size: .9em;
+    font-weight: 700;
+}
+.Users .head p{
+    background: linear-gradient(92.85deg,#0f79dc,#ad4fd9);
+    border-radius: 128px;
+    height: 0.7em;
+}
+form{
+    margin-left: 1em;
+}
+
+.UserTable{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.UserTable thead{
+    background-color: black;
+    color: white;
+   
+    
+}
+.UserTable thead th{
+    padding: .5em;
+}
+.UserTable tbody td{
+    text-align: justify;
+    padding-left: 2.5em;
+    
+    
+}

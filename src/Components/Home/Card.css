@@ -1,0 +1,44 @@
+.Card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    max-width:max-content;
+    padding: 20px;
+    border:  0px solid;
+    border-radius: 50px;
+
+}
+
+
+.Card .grid-container{
+    display: grid;
+    grid-template-columns: 60px auto;
+    padding: 2px;
+    column-gap:0px;
+    row-gap: 0px;
+}
+.Card .grid-item-title {
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 10px;
+   
+}
+.Card .grid-item-icon{
+    margin-left: 50px; 
+    
+}
+.Card .grid-item-icon img{
+    width: 70%;
+}
+.Card .user-data{
+    margin-left: 50px; 
+    margin-top: 20px;
+    margin-bottom: 15px;
+}   
+.Card .moving-icon{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    
+}
+.Card .moving-icon img{
+    width: 60%;
+}

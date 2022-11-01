@@ -1,0 +1,34 @@
+
+   .Home{
+    margin-left: 13em;
+    padding-top: 2em;
+   }
+   .UserHeading{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .UserList{
+        max-width: 900px !important;
+    }
+    .table{
+        font-size: small;
+
+    }
+    .table th{
+        text-align: center;
+        
+    }
+    .closebutton{
+        align-items: center;
+        margin-left: 230px;
+        
+    }
+    .UserInvoice{
+        max-width: 100%;
+        
+    }
+    .UserTable{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
