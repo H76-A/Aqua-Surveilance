@@ -16,8 +16,8 @@ import Home from "./Pages/Home";
 import Sidebar from "./Components/Sidebar";
 
 function App() {
-  const [imgshow, setImgShow] = useState(false);
-  const [show, setShow] = useState(true);
+  const [imgshow, setImgShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   const handleClick = () => {
     setImgShow(false);
