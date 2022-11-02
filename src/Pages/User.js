@@ -184,59 +184,6 @@ export default function ActiveExample(props) {
         </Row>
       </Container>
 
-
-{/* 
-      {showInput && (
-        <div>
-          <div
-            component="form"
-            sx={{
-              "& > :not(style)": { m: 0.5, width: "19ch" },
-            }}
-            noValidate
-            autoComplete="off"
-          >
-            <TextField
-              required
-              id="standard-required"
-              label="Consumer Name"
-              type="text"
-              variant="standard"
-              onChange={(e) => setTitle(e.target.value)}
-            />
-            <TextField
-              required
-              id="standard-number"
-              label="Meter Number"
-              type="number"
-              variant="standard"
-              onChange={(e) => setMeternum(e.target.value)}
-            />
-            <TextField
-              required
-              id="standard-number"
-              label="Cell Number"
-              type="number"
-              variant="standard"
-              onChange={(e) => setCell(e.target.value)}
-            />
-            <TextField
-              required
-              id="standard-required"
-              label="Address"
-              type="text"
-              variant="standard"
-              onChange={(e) => setAddr(e.target.value)}
-            />
-            <Button variant="contained" color="success" onClick={handleSubmit}>
-              {" "}
-              Submit
-            </Button>
-          </div>
-        </div>
-      )} */}
-
-
     </div>
   );
 }

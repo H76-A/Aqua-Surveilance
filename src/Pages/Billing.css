@@ -14,6 +14,9 @@
     font-size: 2.2em;
   text-align: left;
   font-style: oblique;
+  -webkit-text-fill-color: transparent;
+    background: linear-gradient(92.85deg,#0f79dc,#ad4fd9);
+    -webkit-background-clip: text;
 
 }
 .Bill .head p{

@@ -7,12 +7,10 @@
 }
 
 .LineChart span{
-    border: 0px solid ;
-    background-color: rgb(68, 108, 179) !important;
-    border-radius: 10px;
-  
+    font-weight: 700;
     font-size: 1.5em;
-    text-align: center;
-    color: white;
-    font-weight:600;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(92.85deg,#0f79dc,#ad4fd9);
+    -webkit-background-clip: text;
+
 }

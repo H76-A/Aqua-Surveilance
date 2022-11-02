@@ -7,6 +7,7 @@ import "./Sidebar.css";
 export default function Sidebar() {
   return (
     <div className="sidebar">
+        
       <ul>
         <li>
           <img alt='home' src="./Images/home.png" />

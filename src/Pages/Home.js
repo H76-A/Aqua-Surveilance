@@ -36,8 +36,10 @@ export default function Home() {
           <Card />
           </Col>
           <Col lg={6}>
-          <h3 > Consumers</h3>
-      <Table  hover>
+          <h3 className="heading"> Consumers:</h3>
+          <p></p>
+
+      <Table  hover className="UserTable" size ="sm">
       
         <thead>
           <tr>

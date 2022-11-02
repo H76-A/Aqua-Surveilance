@@ -3,12 +3,19 @@
     margin-left: 13em;
     padding-top: 2em;
    }
-   .UserHeading{
-        text-align: center;
+   .Home .heading{
+        text-align: left;
         text-transform: uppercase;
-        margin-bottom: 20px;
+        font-size: 1.5em;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(92.85deg,#0f79dc,#ad4fd9);
+        -webkit-background-clip: text;
     }
-
+    .Home  p{
+        background: linear-gradient(92.85deg,#0f79dc,#ad4fd9);
+        border-radius: 128px;
+        height: 0.4em;
+    }
     .UserList{
         max-width: 900px !important;
     }

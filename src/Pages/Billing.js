@@ -4,9 +4,11 @@ import Modal from "react-bootstrap/Modal";
 import { useState, useEffect } from "react";
 
 // firesotre
-import { db } from "../Components/Firebase/Config";
+import { db,database } from "../Components/Firebase/Config";
 import { collection, getDocs } from "firebase/firestore";
 
+//Real Time Database
+import { ref, onValue } from "firebase/database";
 //Style
 import "./Billing.css";
 import { Container, Row, Col } from "react-bootstrap";
@@ -18,7 +20,7 @@ export default function Billing() {
   const [title,setTitle]  = useState()
   const [meternum ,setMeternum] = useState()
   const [addr ,setAddr] = useState()
-  const [cell , setCell] = useState()
+
   // use Effect and State for User Data
   // Firebase
   useEffect(() => {
@@ -33,13 +35,20 @@ export default function Billing() {
   }, []);
 
   //Invoice Handling
-  const handleInvoice = ( title, addr,meternum ,cell) => {
+  const [flow, setFlow] = useState(null);
+  useEffect(() => {
+    const waterFlow = ref(database, "Aqua/Flow");
+    onValue(waterFlow, (snapshot) => {
+      setFlow(snapshot.val());
+    });
+  }, [flow]);
+
+  const handleInvoice = ( title, addr,meternum ) => {
     setShowInvoice(true);
     
     setTitle(title)
     setMeternum(meternum)
     setAddr(addr)
-    setCell(cell)
     
   };
   const handleClose = () => setShowInvoice(false);
@@ -140,7 +149,7 @@ export default function Billing() {
                         <th>Meter Number</th>
                         <th>Service Dates</th>
                         <th>Current/Liters</th>
-                        <th>previous/Liters</th>
+                        
                         <th>Rs:1/liter</th>
                       </tr>
                     </thead>
@@ -148,8 +157,8 @@ export default function Billing() {
                       <tr>
                         <td>{meternum}</td>
                         <td>20/1/2022</td>
-                        <td>500</td>
-                        <td>0</td>
+                        <td>{flow}</td>
+
                         <td>1</td>
                       </tr>
                     </tbody>
