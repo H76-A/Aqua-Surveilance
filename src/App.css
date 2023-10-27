@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.front  {
+  background-image: url('/public/Images/front-3-1.png');
+  background-size: cover;
+  width: 100%;
+  height: 100% !important;
+
+}
+
+.front .btn{
+    
+    margin-left: 12em;
+    background: transparent;
+    border-color:gray;
+    margin-bottom: 17%;
+    color:aquamarine; ;
+
+    
+}
+
+.userLogin{
+  width: 20%;
+  padding-top: 19em;
+  margin-left: 45em;
+  padding-bottom: 6em;
+  
+}
+.userLabel{
+  border-color:aquamarine !important;
+  color: aquamarine !important;
+  margin-bottom: 1em;
+  background: transparent !important;
+}
+
+.label{
+  text-align: left !important;
+}

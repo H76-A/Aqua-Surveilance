@@ -1,0 +1,41 @@
+
+   .Home{
+    margin-left: 13em;
+    padding-top: 2em;
+   }
+   .Home .heading{
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(92.85deg,#0f79dc,#ad4fd9);
+        -webkit-background-clip: text;
+    }
+    .Home  p{
+        background: linear-gradient(92.85deg,#0f79dc,#ad4fd9);
+        border-radius: 128px;
+        height: 0.4em;
+    }
+    .UserList{
+        max-width: 900px !important;
+    }
+    .table{
+        font-size: small;
+
+    }
+    .table th{
+        text-align: center;
+        
+    }
+    .closebutton{
+        align-items: center;
+        margin-left: 230px;
+        
+    }
+    .UserInvoice{
+        max-width: 100%;
+        
+    }
+    .UserTable{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
